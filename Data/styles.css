@@ -1,0 +1,122 @@
+.responsive-image {
+  max-width: 60%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  color: #652b7c;
+}
+
+.gallery-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  background-color: #fff;
+  border-radius: 8px; 
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(101, 43, 124, 0.1);
+
+}
+
+.gallery-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  border: 1px solid rgba(101, 43, 124, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.gallery-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.carousel h5{
+  width: 150% !important;
+}
+
+.gallery-description,
+.carousel h5 {
+  text-align: center;
+  font-size: 16px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item:focus-within .gallery-description,
+.gallery-item:hover .gallery-description,
+.carousel:hover h5 {
+  opacity: 1;
+}
+
+.carousel-caption {
+  display: block !important;
+}
+
+.image-box {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.image-box:hover {
+  transform: scale(1.05);
+}
+
+.gallery-description,
+.carousel h5 {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
+  padding: 20px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(101, 43, 124, 0.5));
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.gallery-description p {
+  color: white;
+}
+
+.contact-section {
+  color: #fff;
+}
+
+.contact-section p,
+.contact-section li {
+  color: rgba(101, 43, 124, 1) ;
+}
+
+.contact-section a {
+  color: rgba(61, 14, 81, 0.7); /* Set the link color to white */
+}
+
+.contact-us hr{
+  border-color: #ffffff;
+  border-width: 1px;
+}
+
+.governance-content hr{
+  border-color: #652b7ca4;
+}
+
+.governance-content li{
+  text-align: left;
+}
